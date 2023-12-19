@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONIC DI HATI</title>
+    <style>
+        *,html,body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #trailer {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            max-width: 100%;
+            min-height: 100%;
+        }
+        #trailer2 {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            min-width: 100%;
+            max-height: 100%;
+        }
+        .intro {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            font-family: fantasy;
+        }
+
+        #btn {
+            margin-top: 20px;
+            border: none;
+            padding: 12px;
+            color: white;
+            background-color: black;
+            font-weight: 800;
+            width: 200px;
+            cursor: pointer;
+        }
+        #btn2 {
+            margin-top: 20px;
+            border: none;
+            padding: 12px;
+            color: white;
+            background-color: black;
+            font-weight: 800;
+            width: 200px;
+            cursor: pointer;
+        }
+        #btn3 {
+            margin-top: 20px;
+            border: none;
+            padding: 12px;
+            color: white;
+            background-color: black;
+            font-weight: 800;
+            width: 200px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="trailer">
+        <source src="Bahkan di masa sulit_ Coach Yeb akan selalu ada untukmu_ Kai_ Comeback stronger -- _5ekarangindonesia(720P_HD).mp4" type="video/mp4" />
+    </video>
+    <video autoplay loop id="trailer2">
+        <source src="Bahkan di masa sulit_ Coach Yeb akan selalu ada untukmu_ Kai_ Comeback stronger -- _5ekarangindonesia(720P_HD).mp4" type="video/mp4" />
+    </video>
+    <video autoplay muted loop id="trailer3">
+        <source src="Bahkan di masa sulit_ Coach Yeb akan selalu ada untukmu_ Kai_ Comeback stronger -- _5ekarangindonesia(720P_HD).mp4" type="video/mp4" />
+    </video>
+    <div class="intro">
+        <center>
+            <img src="Onic Esports.png"  alt="" width="150" height="150"> 
+            <p>Semangat Onic Terutama Kairi</p>
+            <button id="btn" onclick="pause()">pause</button>
+            <button id="btn2" onclick="pause2()">pause</button>
+            <button id="btn3" onclick="pause3()">pause</button>
+        </center>
+    </div>
+
+    <script>
+        const trailer = document.getElementById("trailer")
+        const trailer2 = document.getElementById("trailer2")
+        const trailer3 = document.getElementById("trailer3")
+        const btn = document.getElementById("btn")
+        const btn2 = document.getElementById("btn2")
+        const btn3 = document.getElementById("btn3")
+
+        function pause() {
+            if(trailer.paused){
+                trailer.play()
+                btn.innerHTML = "pause"
+            }else{
+                trailer.pause()
+                btn.innerHTML = "play"
+            }
+        }
+        function pause2() {
+            if(trailer2.paused){
+                trailer2.play()
+                btn2.innerHTML = "pause"
+            }else{
+                trailer2.pause()
+                btn2.innerHTML = "play"
+            }
+        }
+        function pause3() {
+            if(trailer3.paused){
+                trailer3.play()
+                btn3.innerHTML = "pause"
+            }else{
+                trailer3.pause()
+                btn3.innerHTML = "play"
+            }
+        }
+    </script>
+</body>
+</html>
